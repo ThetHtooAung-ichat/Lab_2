@@ -33,6 +33,13 @@ def sort_temperature(input_list):
 
 def calc_median_temperature(input_list):
     print("calc_median_temperature")
+    cnt = len(input_list)
+
+    if cnt % 2 is 1:
+        median = input_list[(cnt-1)//2]
+    else:
+        median = (input_list[cnt//2]+input_list[(cnt//2)-1])/2
+    print("Median = ", median)
 
 
 def main():
@@ -41,6 +48,7 @@ def main():
     floatlist = get_user_input()
     cal_average(floatlist)
     find_min_max(floatlist)
+    calc_median_temperature(floatlist)
 
 
 if __name__ == "__main__":
