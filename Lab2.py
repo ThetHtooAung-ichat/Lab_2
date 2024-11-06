@@ -1,19 +1,11 @@
 def display_main_menu():
-    print("display_main_menu")
-    print("Enter some numbers separated by commas (e.g. 5,67,32)")
+    #print("display_main_menu")
+    print("Enter some number separated by commas (e.g. 5,67,32)")
 
 def get_user_input():
     print("get_user_input")
     inputstr = input()
-    print("Raw input= "+inputstr)
-    splitlist = inputstr.split(",")
-    print("After splitting= ",splitlist)
-    floatlist = []
-    for x in splitlist:
-        floatnum = float(x)
-        floatlist.append(floatnum)
-    print("Float list = ", floatlist)
-    return floatlist
+    splitlistinputstr.split(",")
 
 def cal_average(input_list):
     print("calc_average")
@@ -30,8 +22,6 @@ def calc_median_temperature(input_list):
 
 def main():
     print("ET0735 (DevOps for AIOT) - Lab 2 - intro to python")
-    display_main_menu()
-    floatlist = get_user_input()
 
 
 if __name__ == "__main__":
